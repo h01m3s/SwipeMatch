@@ -13,6 +13,8 @@
 		DBF3FB3321C9FF0F00D01F21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF3FB3221C9FF0F00D01F21 /* Assets.xcassets */; };
 		DBF3FB3621C9FF0F00D01F21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF3FB3421C9FF0F00D01F21 /* LaunchScreen.storyboard */; };
 		DBF3FB3E21CA006500D01F21 /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF3FB3D21CA006500D01F21 /* Extensions+UIView.swift */; };
+		DBF3FB4221CB204500D01F21 /* HomeBottomControlsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF3FB4121CB204500D01F21 /* HomeBottomControlsStackView.swift */; };
+		DBF3FB4421CB24AC00D01F21 /* TopNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF3FB4321CB24AC00D01F21 /* TopNavigationStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DBF3FB3521C9FF0F00D01F21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBF3FB3721C9FF0F00D01F21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBF3FB3D21CA006500D01F21 /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
+		DBF3FB4121CB204500D01F21 /* HomeBottomControlsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBottomControlsStackView.swift; sourceTree = "<group>"; };
+		DBF3FB4321CB24AC00D01F21 /* TopNavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavigationStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				DBF3FB2B21C9FF0D00D01F21 /* AppDelegate.swift */,
+				DBF3FB4021CB201A00D01F21 /* Views */,
 				DBF3FB2D21C9FF0D00D01F21 /* ViewController.swift */,
 				DBF3FB2F21C9FF0D00D01F21 /* Main.storyboard */,
 				DBF3FB3221C9FF0F00D01F21 /* Assets.xcassets */,
@@ -73,6 +78,15 @@
 				DBF3FB3D21CA006500D01F21 /* Extensions+UIView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DBF3FB4021CB201A00D01F21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DBF3FB4121CB204500D01F21 /* HomeBottomControlsStackView.swift */,
+				DBF3FB4321CB24AC00D01F21 /* TopNavigationStackView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +161,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBF3FB2E21C9FF0D00D01F21 /* ViewController.swift in Sources */,
+				DBF3FB4221CB204500D01F21 /* HomeBottomControlsStackView.swift in Sources */,
 				DBF3FB2C21C9FF0D00D01F21 /* AppDelegate.swift in Sources */,
 				DBF3FB3E21CA006500D01F21 /* Extensions+UIView.swift in Sources */,
+				DBF3FB4421CB24AC00D01F21 /* TopNavigationStackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
