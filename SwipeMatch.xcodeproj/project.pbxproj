@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB1676B421CE0F30007D5A15 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1676B321CE0F30007D5A15 /* User.swift */; };
 		DBF3FB2C21C9FF0D00D01F21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF3FB2B21C9FF0D00D01F21 /* AppDelegate.swift */; };
-		DBF3FB2E21C9FF0D00D01F21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF3FB2D21C9FF0D00D01F21 /* ViewController.swift */; };
+		DBF3FB2E21C9FF0D00D01F21 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF3FB2D21C9FF0D00D01F21 /* HomeController.swift */; };
 		DBF3FB3121C9FF0D00D01F21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF3FB2F21C9FF0D00D01F21 /* Main.storyboard */; };
 		DBF3FB3321C9FF0F00D01F21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF3FB3221C9FF0F00D01F21 /* Assets.xcassets */; };
 		DBF3FB3621C9FF0F00D01F21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF3FB3421C9FF0F00D01F21 /* LaunchScreen.storyboard */; };
@@ -19,9 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB1676B321CE0F30007D5A15 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DBF3FB2821C9FF0D00D01F21 /* SwipeMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF3FB2B21C9FF0D00D01F21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DBF3FB2D21C9FF0D00D01F21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DBF3FB2D21C9FF0D00D01F21 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		DBF3FB3021C9FF0D00D01F21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBF3FB3221C9FF0F00D01F21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBF3FB3521C9FF0F00D01F21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB1676B221CE0F24007D5A15 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB1676B321CE0F30007D5A15 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DBF3FB1F21C9FF0D00D01F21 = {
 			isa = PBXGroup;
 			children = (
@@ -63,13 +73,14 @@
 			isa = PBXGroup;
 			children = (
 				DBF3FB2B21C9FF0D00D01F21 /* AppDelegate.swift */,
+				DB1676B221CE0F24007D5A15 /* Model */,
 				DBF3FB4021CB201A00D01F21 /* Views */,
-				DBF3FB2D21C9FF0D00D01F21 /* ViewController.swift */,
+				DBF3FB3F21CA015A00D01F21 /* Extensions */,
+				DBF3FB2D21C9FF0D00D01F21 /* HomeController.swift */,
 				DBF3FB2F21C9FF0D00D01F21 /* Main.storyboard */,
 				DBF3FB3221C9FF0F00D01F21 /* Assets.xcassets */,
 				DBF3FB3421C9FF0F00D01F21 /* LaunchScreen.storyboard */,
 				DBF3FB3721C9FF0F00D01F21 /* Info.plist */,
-				DBF3FB3F21CA015A00D01F21 /* Extensions */,
 			);
 			path = SwipeMatch;
 			sourceTree = "<group>";
@@ -163,12 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBF3FB2E21C9FF0D00D01F21 /* ViewController.swift in Sources */,
+				DBF3FB2E21C9FF0D00D01F21 /* HomeController.swift in Sources */,
 				DBF3FB4221CB204500D01F21 /* HomeBottomControlsStackView.swift in Sources */,
 				DBF3FB2C21C9FF0D00D01F21 /* AppDelegate.swift in Sources */,
 				DBF3FB3E21CA006500D01F21 /* Extensions+UIView.swift in Sources */,
 				DBF3FB4621CB4BCF00D01F21 /* CardView.swift in Sources */,
 				DBF3FB4421CB24AC00D01F21 /* TopNavigationStackView.swift in Sources */,
+				DB1676B421CE0F30007D5A15 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
