@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DB1676B421CE0F30007D5A15 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1676B321CE0F30007D5A15 /* User.swift */; };
+		DB48EBC021DDC6FD00C1B920 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB48EBBF21DDC6FD00C1B920 /* CardViewModel.swift */; };
 		DBF3FB2C21C9FF0D00D01F21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF3FB2B21C9FF0D00D01F21 /* AppDelegate.swift */; };
 		DBF3FB2E21C9FF0D00D01F21 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF3FB2D21C9FF0D00D01F21 /* HomeController.swift */; };
 		DBF3FB3121C9FF0D00D01F21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF3FB2F21C9FF0D00D01F21 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		DB1676B321CE0F30007D5A15 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DB48EBBF21DDC6FD00C1B920 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		DBF3FB2821C9FF0D00D01F21 /* SwipeMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF3FB2B21C9FF0D00D01F21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBF3FB2D21C9FF0D00D01F21 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
@@ -53,6 +55,22 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		DB48EBBD21DDC64700C1B920 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DBF3FB2D21C9FF0D00D01F21 /* HomeController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DB48EBBE21DDC6CD00C1B920 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DB48EBBF21DDC6FD00C1B920 /* CardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		DBF3FB1F21C9FF0D00D01F21 = {
 			isa = PBXGroup;
 			children = (
@@ -72,11 +90,12 @@
 		DBF3FB2A21C9FF0D00D01F21 /* SwipeMatch */ = {
 			isa = PBXGroup;
 			children = (
-				DBF3FB2B21C9FF0D00D01F21 /* AppDelegate.swift */,
+				DB48EBBE21DDC6CD00C1B920 /* ViewModels */,
 				DB1676B221CE0F24007D5A15 /* Model */,
 				DBF3FB4021CB201A00D01F21 /* Views */,
 				DBF3FB3F21CA015A00D01F21 /* Extensions */,
-				DBF3FB2D21C9FF0D00D01F21 /* HomeController.swift */,
+				DB48EBBD21DDC64700C1B920 /* Controllers */,
+				DBF3FB2B21C9FF0D00D01F21 /* AppDelegate.swift */,
 				DBF3FB2F21C9FF0D00D01F21 /* Main.storyboard */,
 				DBF3FB3221C9FF0F00D01F21 /* Assets.xcassets */,
 				DBF3FB3421C9FF0F00D01F21 /* LaunchScreen.storyboard */,
@@ -178,6 +197,7 @@
 				DBF3FB4221CB204500D01F21 /* HomeBottomControlsStackView.swift in Sources */,
 				DBF3FB2C21C9FF0D00D01F21 /* AppDelegate.swift in Sources */,
 				DBF3FB3E21CA006500D01F21 /* Extensions+UIView.swift in Sources */,
+				DB48EBC021DDC6FD00C1B920 /* CardViewModel.swift in Sources */,
 				DBF3FB4621CB4BCF00D01F21 /* CardView.swift in Sources */,
 				DBF3FB4421CB24AC00D01F21 /* TopNavigationStackView.swift in Sources */,
 				DB1676B421CE0F30007D5A15 /* User.swift in Sources */,
