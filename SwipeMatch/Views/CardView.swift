@@ -26,8 +26,6 @@ class CardView: UIView {
     // Configurations
     fileprivate let threshold: CGFloat = 100
 
-    
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
