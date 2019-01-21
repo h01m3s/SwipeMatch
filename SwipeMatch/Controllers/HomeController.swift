@@ -34,16 +34,12 @@ class HomeController: UIViewController {
     }
     
     fileprivate func setupDummyCards() {
-        
         cardViewModels.forEach { (cardVM) in
-            
             let cardView = CardView(frame: .zero)
             cardView.cardViewModel = cardVM
             cardsDeckView.addSubview(cardView)
             cardView.fillSuperview()
-            
         }
-        
     }
     
     // MARK:- Fileprivate
