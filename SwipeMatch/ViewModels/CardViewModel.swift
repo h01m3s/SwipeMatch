@@ -12,11 +12,27 @@ protocol ProducesCardViewModel {
     func toCardViewModel() -> CardViewModel
 }
 
-struct CardViewModel {
+class CardViewModel {
     
     let imageNames: [String]
     let attributedString: NSAttributedString
     let textAlignment: NSTextAlignment
+    
+    init(imageNames: [String], attributedString: NSAttributedString, textAlignment: NSTextAlignment) {
+        self.imageNames = imageNames
+        self.attributedString = attributedString
+        self.textAlignment = textAlignment
+    }
+    
+    fileprivate var imageIndex = 0
+    
+    func advanceToNextPhoto() {
+        imageIndex = imageIndex + 1
+    }
+    
+    func goToPreviousPhoto() {
+        imageIndex = imageIndex - 1
+    }
     
 }
 
