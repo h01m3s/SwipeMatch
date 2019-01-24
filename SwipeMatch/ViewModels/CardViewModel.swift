@@ -24,14 +24,23 @@ class CardViewModel {
         self.textAlignment = textAlignment
     }
     
-    fileprivate var imageIndex = 0
+    fileprivate var imageIndex = 0 {
+        didSet {
+            let imageName = imageNames[imageIndex]
+            let image = UIImage(named: imageName)
+            imageIndexObserver?(image)
+        }
+    }
+    
+    // Reactive Programming
+    var imageIndexObserver: ((UIImage?) -> ())?
     
     func advanceToNextPhoto() {
-        imageIndex = imageIndex + 1
+        imageIndex = min(imageIndex + 1, imageNames.count - 1)
     }
     
     func goToPreviousPhoto() {
-        imageIndex = imageIndex - 1
+        imageIndex = max(0, imageIndex - 1)
     }
     
 }
