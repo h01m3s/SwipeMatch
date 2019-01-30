@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		DB0DEF9421F03EFC00FC7A18 /* Advertiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0DEF9321F03EFC00FC7A18 /* Advertiser.swift */; };
 		DB1676B421CE0F30007D5A15 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1676B321CE0F30007D5A15 /* User.swift */; };
+		DB1809BA22025F5300012F17 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1809B922025F5300012F17 /* RegistrationController.swift */; };
+		DB1809BC2202648300012F17 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1809BB2202648300012F17 /* CustomTextField.swift */; };
 		DB48EBC021DDC6FD00C1B920 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB48EBBF21DDC6FD00C1B920 /* CardViewModel.swift */; };
 		DBF3FB2C21C9FF0D00D01F21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF3FB2B21C9FF0D00D01F21 /* AppDelegate.swift */; };
 		DBF3FB2E21C9FF0D00D01F21 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF3FB2D21C9FF0D00D01F21 /* HomeController.swift */; };
@@ -24,6 +26,8 @@
 /* Begin PBXFileReference section */
 		DB0DEF9321F03EFC00FC7A18 /* Advertiser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advertiser.swift; sourceTree = "<group>"; };
 		DB1676B321CE0F30007D5A15 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DB1809B922025F5300012F17 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		DB1809BB2202648300012F17 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		DB48EBBF21DDC6FD00C1B920 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		DBF3FB2821C9FF0D00D01F21 /* SwipeMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF3FB2B21C9FF0D00D01F21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				DBF3FB2D21C9FF0D00D01F21 /* HomeController.swift */,
+				DB1809B922025F5300012F17 /* RegistrationController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 				DBF3FB4121CB204500D01F21 /* HomeBottomControlsStackView.swift */,
 				DBF3FB4321CB24AC00D01F21 /* TopNavigationStackView.swift */,
 				DBF3FB4521CB4BCF00D01F21 /* CardView.swift */,
+				DB1809BB2202648300012F17 /* CustomTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -197,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBF3FB2E21C9FF0D00D01F21 /* HomeController.swift in Sources */,
+				DB1809BC2202648300012F17 /* CustomTextField.swift in Sources */,
 				DBF3FB4221CB204500D01F21 /* HomeBottomControlsStackView.swift in Sources */,
 				DB0DEF9421F03EFC00FC7A18 /* Advertiser.swift in Sources */,
 				DBF3FB2C21C9FF0D00D01F21 /* AppDelegate.swift in Sources */,
@@ -204,6 +211,7 @@
 				DB48EBC021DDC6FD00C1B920 /* CardViewModel.swift in Sources */,
 				DBF3FB4621CB4BCF00D01F21 /* CardView.swift in Sources */,
 				DBF3FB4421CB24AC00D01F21 /* TopNavigationStackView.swift in Sources */,
+				DB1809BA22025F5300012F17 /* RegistrationController.swift in Sources */,
 				DB1676B421CE0F30007D5A15 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

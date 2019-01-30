@@ -12,6 +12,7 @@ protocol ProducesCardViewModel {
     func toCardViewModel() -> CardViewModel
 }
 
+// View Model is supposed represent the State of View
 class CardViewModel {
     
     let imageNames: [String]
