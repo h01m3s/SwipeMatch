@@ -22,6 +22,9 @@ class RegistrationController: UIViewController {
         return button
     }()
     
+    lazy var selectPhotoButtonWidthAnchor = selectPhotoButton.widthAnchor.constraint(equalToConstant: 275)
+    lazy var selectPhotoButtonHeightAnchor = selectPhotoButton.heightAnchor.constraint(equalToConstant: 275)
+    
     let fullNameTextField: CustomTextField = {
         let textField = CustomTextField(padding: 24, height: 50)
         textField.placeholder = "Enter full name"
@@ -152,7 +155,6 @@ class RegistrationController: UIViewController {
             registerButton
             ])
         stackView.axis = .vertical
-        stackView.distribution = .fillEqually
         stackView.spacing = 8
         return stackView
     }()
@@ -165,8 +167,14 @@ class RegistrationController: UIViewController {
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         if self.traitCollection.verticalSizeClass == .compact {
             overallStackView.axis = .horizontal
+            verticalStackView.distribution = .fillEqually
+            selectPhotoButtonHeightAnchor.isActive = false
+            selectPhotoButtonWidthAnchor.isActive = true
         } else {
             overallStackView.axis = .vertical
+            verticalStackView.distribution = .fill
+            selectPhotoButtonWidthAnchor.isActive = false
+            selectPhotoButtonHeightAnchor.isActive = true
         }
     }
     
