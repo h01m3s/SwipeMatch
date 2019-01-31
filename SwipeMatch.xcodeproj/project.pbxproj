@@ -11,6 +11,7 @@
 		DB1676B421CE0F30007D5A15 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1676B321CE0F30007D5A15 /* User.swift */; };
 		DB1809BA22025F5300012F17 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1809B922025F5300012F17 /* RegistrationController.swift */; };
 		DB1809BC2202648300012F17 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1809BB2202648300012F17 /* CustomTextField.swift */; };
+		DB1809BE220277FD00012F17 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1809BD220277FD00012F17 /* RegistrationViewModel.swift */; };
 		DB48EBC021DDC6FD00C1B920 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB48EBBF21DDC6FD00C1B920 /* CardViewModel.swift */; };
 		DBF3FB2C21C9FF0D00D01F21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF3FB2B21C9FF0D00D01F21 /* AppDelegate.swift */; };
 		DBF3FB2E21C9FF0D00D01F21 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF3FB2D21C9FF0D00D01F21 /* HomeController.swift */; };
@@ -28,6 +29,7 @@
 		DB1676B321CE0F30007D5A15 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DB1809B922025F5300012F17 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		DB1809BB2202648300012F17 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		DB1809BD220277FD00012F17 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		DB48EBBF21DDC6FD00C1B920 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		DBF3FB2821C9FF0D00D01F21 /* SwipeMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF3FB2B21C9FF0D00D01F21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			children = (
 				DBF3FB2D21C9FF0D00D01F21 /* HomeController.swift */,
 				DB1809B922025F5300012F17 /* RegistrationController.swift */,
+				DB1809BD220277FD00012F17 /* RegistrationViewModel.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBF3FB2E21C9FF0D00D01F21 /* HomeController.swift in Sources */,
+				DB1809BE220277FD00012F17 /* RegistrationViewModel.swift in Sources */,
 				DB1809BC2202648300012F17 /* CustomTextField.swift in Sources */,
 				DBF3FB4221CB204500D01F21 /* HomeBottomControlsStackView.swift in Sources */,
 				DB0DEF9421F03EFC00FC7A18 /* Advertiser.swift in Sources */,
