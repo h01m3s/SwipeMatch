@@ -10,6 +10,20 @@ import UIKit
 import Firebase
 import JGProgressHUD
 
+extension RegistrationController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let image = info[.originalImage] as? UIImage
+        registrationViewModel.bindableImage.value = image
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true)
+    }
+    
+}
+    
 class RegistrationController: UIViewController {
     
     // UI Components
@@ -21,8 +35,17 @@ class RegistrationController: UIViewController {
         button.setTitleColor(.black, for: .normal)
         button.heightAnchor.constraint(equalToConstant: 275).isActive = true
         button.layer.cornerRadius = 16
+        button.addTarget(self, action: #selector(handleSelectPhoto), for: .touchUpInside)
+        button.imageView?.contentMode = .scaleAspectFill
+        button.clipsToBounds = true
         return button
     }()
+    
+    @objc fileprivate func handleSelectPhoto() {
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        present(imagePickerController, animated: true)
+    }
     
     lazy var selectPhotoButtonWidthAnchor = selectPhotoButton.widthAnchor.constraint(equalToConstant: 275)
     lazy var selectPhotoButtonHeightAnchor = selectPhotoButton.heightAnchor.constraint(equalToConstant: 275)
@@ -107,8 +130,6 @@ class RegistrationController: UIViewController {
         
         setupLayout()
         
-        setupNotificationObservers()
-        
         setupTapGesture()
         setupRegistrationViewModelObserver()
     }
@@ -118,19 +139,15 @@ class RegistrationController: UIViewController {
     let registrationViewModel = RegistrationViewModel()
     
     fileprivate func setupRegistrationViewModelObserver() {
-        registrationViewModel.isFormValidObserver = { [unowned self] (isFormValid) in
-            
+        registrationViewModel.bindableIsFormValid.bind { [unowned self] (isFormValid) in
+            guard let isFormValid = isFormValid else { return }
             self.registerButton.isEnabled = isFormValid
-            
             self.registerButton.backgroundColor = isFormValid ? #colorLiteral(red: 0.8287895322, green: 0.09591957182, blue: 0.3255727291, alpha: 1) : .lightGray
             self.registerButton.setTitleColor(isFormValid ? .white : .gray, for: .normal)
-//            if isFormValid {
-//                self.registerButton.backgroundColor = #colorLiteral(red: 0.8287895322, green: 0.09591957182, blue: 0.3255727291, alpha: 1)
-//                self.registerButton.setTitleColor(.white, for: .normal)
-//            } else {
-//                self.registerButton.backgroundColor = .lightGray
-//                self.registerButton.setTitleColor(.gray, for: .normal)
-//            }
+        }
+        
+        registrationViewModel.bindableImage.bind { [unowned self] (img) in
+            self.selectPhotoButton.setImage(img?.withRenderingMode(.alwaysOriginal), for: .normal)
         }
     }
     
@@ -145,6 +162,11 @@ class RegistrationController: UIViewController {
     fileprivate func setupNotificationObservers() {
         NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setupNotificationObservers()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
