@@ -14,6 +14,7 @@
 		DB1809BC2202648300012F17 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1809BB2202648300012F17 /* CustomTextField.swift */; };
 		DB1809BE220277FD00012F17 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1809BD220277FD00012F17 /* RegistrationViewModel.swift */; };
 		DB48EBC021DDC6FD00C1B920 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB48EBBF21DDC6FD00C1B920 /* CardViewModel.swift */; };
+		DB7A5E4A2203CB50008A37FB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB7A5E492203CB50008A37FB /* GoogleService-Info.plist */; };
 		DBF3FB2C21C9FF0D00D01F21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF3FB2B21C9FF0D00D01F21 /* AppDelegate.swift */; };
 		DBF3FB2E21C9FF0D00D01F21 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF3FB2D21C9FF0D00D01F21 /* HomeController.swift */; };
 		DBF3FB3121C9FF0D00D01F21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF3FB2F21C9FF0D00D01F21 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		DB1809BB2202648300012F17 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		DB1809BD220277FD00012F17 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		DB48EBBF21DDC6FD00C1B920 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		DB7A5E492203CB50008A37FB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DBF3FB2821C9FF0D00D01F21 /* SwipeMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF3FB2B21C9FF0D00D01F21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBF3FB2D21C9FF0D00D01F21 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				DBF3FB2F21C9FF0D00D01F21 /* Main.storyboard */,
 				DBF3FB3221C9FF0F00D01F21 /* Assets.xcassets */,
 				DBF3FB3421C9FF0F00D01F21 /* LaunchScreen.storyboard */,
+				DB7A5E492203CB50008A37FB /* GoogleService-Info.plist */,
 				DBF3FB3721C9FF0F00D01F21 /* Info.plist */,
 			);
 			path = SwipeMatch;
@@ -219,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBF3FB3621C9FF0F00D01F21 /* LaunchScreen.storyboard in Resources */,
+				DB7A5E4A2203CB50008A37FB /* GoogleService-Info.plist in Resources */,
 				DBF3FB3321C9FF0F00D01F21 /* Assets.xcassets in Resources */,
 				DBF3FB3121C9FF0D00D01F21 /* Main.storyboard in Resources */,
 			);
@@ -264,11 +268,8 @@
 				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -282,11 +283,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
