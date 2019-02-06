@@ -87,8 +87,6 @@
 			children = (
 				DBF3FB2D21C9FF0D00D01F21 /* HomeController.swift */,
 				DB1809B922025F5300012F17 /* RegistrationController.swift */,
-				DB1809BD220277FD00012F17 /* RegistrationViewModel.swift */,
-				DB7A5E4B2203D980008A37FB /* Bindable.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -97,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				DB48EBBF21DDC6FD00C1B920 /* CardViewModel.swift */,
+				DB1809BD220277FD00012F17 /* RegistrationViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -140,6 +139,7 @@
 		DBF3FB3F21CA015A00D01F21 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				DB7A5E4B2203D980008A37FB /* Bindable.swift */,
 				DBF3FB3D21CA006500D01F21 /* Extensions+UIView.swift */,
 			);
 			path = Extensions;

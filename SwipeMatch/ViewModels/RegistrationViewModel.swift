@@ -48,7 +48,9 @@ class RegistrationViewModel {
             let filename = UUID().uuidString
             let ref = Storage.storage().reference(withPath: "/images/\(filename)")
             let imageData = self.bindableImage.value?.jpegData(compressionQuality: 0.75) ?? Data()
-            ref.putData(imageData, metadata: nil, completion: { (_, err) in
+            let metaData = StorageMetadata()
+            metaData.contentType = "image/jpeg"
+            ref.putData(imageData, metadata: metaData, completion: { (_, err) in
                 
                 if let err = err {
                     completion(err)
