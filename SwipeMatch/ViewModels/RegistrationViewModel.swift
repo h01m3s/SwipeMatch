@@ -21,13 +21,13 @@ class RegistrationViewModel {
         }
     }
     
-    var email: String?{
+    var email: String? {
         didSet {
             checkFormValidity()
         }
     }
     
-    var password: String?{
+    var password: String? {
         didSet {
             checkFormValidity()
         }
