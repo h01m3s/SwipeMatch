@@ -68,7 +68,7 @@ class RegistrationController: UIViewController {
     let passwordTextField: CustomTextField = {
         let textField = CustomTextField(padding: 24, height: 50)
         textField.placeholder = "Enter password"
-        textField.isSecureTextEntry = true
+//        textField.isSecureTextEntry = true
         textField.addTarget(self, action: #selector(handleTextChange), for: .editingChanged)
         return textField
     }()
