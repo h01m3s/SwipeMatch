@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class HomeController: UIViewController {
 
@@ -14,16 +15,18 @@ class HomeController: UIViewController {
     let cardsDeckView = UIView()
     let bottonsStackView = HomeBottomControlsStackView()
 
-    let cardViewModels: [CardViewModel] = {
-        let producers = [
-            User(name: "Kelly", age: 23, profession: "Music DJ", imageNames: ["kelly1", "kelly2", "kelly3"]),
-            Advertiser(title: "Slide Out Menu", brandName: "Let's Build That App", posterPhotoName: "slide_out_menu_poster"),
-            User(name: "Jane", age: 18, profession: "Teacher", imageNames: ["jane1", "jane2", "jane3"]),
-            ] as [ProducesCardViewModel]
-        
-        let viewModels = producers.map { $0.toCardViewModel() }
-        return viewModels
-    }()
+//    let cardViewModels: [CardViewModel] = {
+//        let producers = [
+//            User(name: "Kelly", age: 23, profession: "Music DJ", imageNames: ["kelly1", "kelly2", "kelly3"]),
+//            Advertiser(title: "Slide Out Menu", brandName: "Let's Build That App", posterPhotoName: "slide_out_menu_poster"),
+//            User(name: "Jane", age: 18, profession: "Teacher", imageNames: ["jane1", "jane2", "jane3"]),
+//            ] as [ProducesCardViewModel]
+//
+//        let viewModels = producers.map { $0.toCardViewModel() }
+//        return viewModels
+//    }()
+    
+    var cardViewModels = [CardViewModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +35,24 @@ class HomeController: UIViewController {
 
         setupLayout()
         setupDummyCards()
+        
+        fetchUsersFromFirestore()
+    }
+    
+    fileprivate func fetchUsersFromFirestore() {
+        Firestore.firestore().collection("users").getDocuments { (snapshot, err) in
+            if let err = err {
+                print("Failed to fetch users: ", err.localizedDescription)
+                return
+            }
+            
+            snapshot?.documents.forEach({ (documentSnapshot) in
+                let userDictionary = documentSnapshot.data()
+                let user = User(dictionary: userDictionary)
+                self.cardViewModels.append(user.toCardViewModel())
+            })
+            self.setupDummyCards()
+        }
     }
     
     @objc fileprivate func handleSettings() {
@@ -51,6 +72,8 @@ class HomeController: UIViewController {
     
     // MARK:- Fileprivate
     fileprivate func setupLayout() {
+        
+        view.backgroundColor = .white
         
         // The way UIKit manage all the subviews for a particular component such as a UIStackView
         // is to assign all these subviews a z-index, so the view appears first has lower z-index
