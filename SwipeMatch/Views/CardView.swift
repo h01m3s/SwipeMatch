@@ -35,9 +35,13 @@ class CardView: UIView {
     }
     
     fileprivate func setupImageIndexObserver() {
-        cardViewModel.imageIndexObserver = { [unowned self] (idx, image) in
+        cardViewModel.imageIndexObserver = { [unowned self] (idx, imageUrl) in
             print("Changing photo from view model")
-            self.imageView.image = image
+            
+            if let url = URL(string: imageUrl ?? "") {
+                self.imageView.sd_setImage(with: url)
+            }
+            
             self.barsStackView.arrangedSubviews.forEach({ (view) in
                 view.backgroundColor = self.barDeselectedColor
             })
