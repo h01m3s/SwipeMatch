@@ -25,6 +25,7 @@
 		DBF3FB4221CB204500D01F21 /* HomeBottomControlsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF3FB4121CB204500D01F21 /* HomeBottomControlsStackView.swift */; };
 		DBF3FB4421CB24AC00D01F21 /* TopNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF3FB4321CB24AC00D01F21 /* TopNavigationStackView.swift */; };
 		DBF3FB4621CB4BCF00D01F21 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF3FB4521CB4BCF00D01F21 /* CardView.swift */; };
+		DBF48B2C2251B15B00BECBDF /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF48B2B2251B15B00BECBDF /* SettingsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		DBF3FB4121CB204500D01F21 /* HomeBottomControlsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBottomControlsStackView.swift; sourceTree = "<group>"; };
 		DBF3FB4321CB24AC00D01F21 /* TopNavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavigationStackView.swift; sourceTree = "<group>"; };
 		DBF3FB4521CB4BCF00D01F21 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		DBF48B2B2251B15B00BECBDF /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			children = (
 				DBF3FB2D21C9FF0D00D01F21 /* HomeController.swift */,
 				DB1809B922025F5300012F17 /* RegistrationController.swift */,
+				DBF48B2B2251B15B00BECBDF /* SettingsController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				DBF3FB3E21CA006500D01F21 /* Extensions+UIView.swift in Sources */,
 				DB48EBC021DDC6FD00C1B920 /* CardViewModel.swift in Sources */,
 				DBF3FB4621CB4BCF00D01F21 /* CardView.swift in Sources */,
+				DBF48B2C2251B15B00BECBDF /* SettingsController.swift in Sources */,
 				DBF3FB4421CB24AC00D01F21 /* TopNavigationStackView.swift in Sources */,
 				DB1809BA22025F5300012F17 /* RegistrationController.swift in Sources */,
 				DB1676B421CE0F30007D5A15 /* User.swift in Sources */,
