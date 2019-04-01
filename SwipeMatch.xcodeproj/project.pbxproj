@@ -26,6 +26,7 @@
 		DBF3FB4421CB24AC00D01F21 /* TopNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF3FB4321CB24AC00D01F21 /* TopNavigationStackView.swift */; };
 		DBF3FB4621CB4BCF00D01F21 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF3FB4521CB4BCF00D01F21 /* CardView.swift */; };
 		DBF48B2C2251B15B00BECBDF /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF48B2B2251B15B00BECBDF /* SettingsController.swift */; };
+		DBF48B2E2251BB8600BECBDF /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF48B2D2251BB8600BECBDF /* SettingsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		DBF3FB4321CB24AC00D01F21 /* TopNavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavigationStackView.swift; sourceTree = "<group>"; };
 		DBF3FB4521CB4BCF00D01F21 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		DBF48B2B2251B15B00BECBDF /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		DBF48B2D2251BB8600BECBDF /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				DBF3FB4321CB24AC00D01F21 /* TopNavigationStackView.swift */,
 				DBF3FB4521CB4BCF00D01F21 /* CardView.swift */,
 				DB1809BB2202648300012F17 /* CustomTextField.swift */,
+				DBF48B2D2251BB8600BECBDF /* SettingsCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				DBF3FB4421CB24AC00D01F21 /* TopNavigationStackView.swift in Sources */,
 				DB1809BA22025F5300012F17 /* RegistrationController.swift in Sources */,
 				DB1676B421CE0F30007D5A15 /* User.swift in Sources */,
+				DBF48B2E2251BB8600BECBDF /* SettingsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
