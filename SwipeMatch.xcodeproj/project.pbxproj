@@ -27,6 +27,7 @@
 		DBF3FB4621CB4BCF00D01F21 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF3FB4521CB4BCF00D01F21 /* CardView.swift */; };
 		DBF48B2C2251B15B00BECBDF /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF48B2B2251B15B00BECBDF /* SettingsController.swift */; };
 		DBF48B2E2251BB8600BECBDF /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF48B2D2251BB8600BECBDF /* SettingsCell.swift */; };
+		DBF48B302252F68D00BECBDF /* AgeRangeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF48B2F2252F68D00BECBDF /* AgeRangeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		DBF3FB4521CB4BCF00D01F21 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		DBF48B2B2251B15B00BECBDF /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		DBF48B2D2251BB8600BECBDF /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		DBF48B2F2252F68D00BECBDF /* AgeRangeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeRangeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				DBF3FB4521CB4BCF00D01F21 /* CardView.swift */,
 				DB1809BB2202648300012F17 /* CustomTextField.swift */,
 				DBF48B2D2251BB8600BECBDF /* SettingsCell.swift */,
+				DBF48B2F2252F68D00BECBDF /* AgeRangeCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				DBF3FB4221CB204500D01F21 /* HomeBottomControlsStackView.swift in Sources */,
 				DB0DEF9421F03EFC00FC7A18 /* Advertiser.swift in Sources */,
 				DBF3FB2C21C9FF0D00D01F21 /* AppDelegate.swift in Sources */,
+				DBF48B302252F68D00BECBDF /* AgeRangeCell.swift in Sources */,
 				DBF3FB3E21CA006500D01F21 /* Extensions+UIView.swift in Sources */,
 				DB48EBC021DDC6FD00C1B920 /* CardViewModel.swift in Sources */,
 				DBF3FB4621CB4BCF00D01F21 /* CardView.swift in Sources */,

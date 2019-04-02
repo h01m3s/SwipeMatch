@@ -37,7 +37,7 @@ class HomeController: UIViewController {
         bottomControls.refreshButton.addTarget(self, action: #selector(handleRefresh), for: .touchUpInside)
 
         setupLayout()
-        setupFirestoreUserCards()
+//        setupFirestoreUserCards()
         
         fetchUsersFromFirestore()
     }
@@ -87,14 +87,14 @@ class HomeController: UIViewController {
         present(navController, animated: true)
     }
     
-    fileprivate func setupFirestoreUserCards() {
-        cardViewModels.forEach { (cardVM) in
-            let cardView = CardView(frame: .zero)
-            cardView.cardViewModel = cardVM
-            cardsDeckView.addSubview(cardView)
-            cardView.fillSuperview()
-        }
-    }
+//    fileprivate func setupFirestoreUserCards() {
+//        cardViewModels.forEach { (cardVM) in
+//            let cardView = CardView(frame: .zero)
+//            cardView.cardViewModel = cardVM
+//            cardsDeckView.addSubview(cardView)
+//            cardView.fillSuperview()
+//        }
+//    }
     
     // MARK:- Fileprivate
     fileprivate func setupLayout() {
