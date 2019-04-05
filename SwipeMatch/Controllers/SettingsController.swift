@@ -216,6 +216,10 @@ class SettingsController: UITableViewController, UIImagePickerControllerDelegate
         ageRangeCell.minLabel.text = "Min: " + "\(Int(slider.value))"
         
         user?.minSeekingAge = Int(slider.value)
+        if slider.value > ageRangeCell.maxSlider.value {
+            ageRangeCell.maxSlider.setValue(slider.value, animated: true)
+            ageRangeCell.maxLabel.text = "Max: " + "\(Int(slider.value))"
+        }
     }
     
     @objc fileprivate func handleMaxAgeChange(slider: UISlider) {
@@ -224,6 +228,10 @@ class SettingsController: UITableViewController, UIImagePickerControllerDelegate
         ageRangeCell.maxLabel.text = "Max: " + "\(Int(slider.value))"
         
         user?.maxSeekingAge = Int(slider.value)
+        if slider.value < ageRangeCell.minSlider.value {
+            ageRangeCell.minSlider.setValue(slider.value, animated: true)
+            ageRangeCell.minLabel.text = "Min: " + "\(Int(slider.value))"
+        }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
