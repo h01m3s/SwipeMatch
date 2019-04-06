@@ -28,6 +28,7 @@
 		DBF48B2C2251B15B00BECBDF /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF48B2B2251B15B00BECBDF /* SettingsController.swift */; };
 		DBF48B2E2251BB8600BECBDF /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF48B2D2251BB8600BECBDF /* SettingsCell.swift */; };
 		DBF48B302252F68D00BECBDF /* AgeRangeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF48B2F2252F68D00BECBDF /* AgeRangeCell.swift */; };
+		DBF48B5022570CF500BECBDF /* Firebase+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF48B4F22570CF500BECBDF /* Firebase+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		DBF48B2B2251B15B00BECBDF /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		DBF48B2D2251BB8600BECBDF /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		DBF48B2F2252F68D00BECBDF /* AgeRangeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeRangeCell.swift; sourceTree = "<group>"; };
+		DBF48B4F22570CF500BECBDF /* Firebase+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			children = (
 				DB7A5E4B2203D980008A37FB /* Bindable.swift */,
 				DBF3FB3D21CA006500D01F21 /* Extensions+UIView.swift */,
+				DBF48B4F22570CF500BECBDF /* Firebase+Utils.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				DBF3FB2C21C9FF0D00D01F21 /* AppDelegate.swift in Sources */,
 				DBF48B302252F68D00BECBDF /* AgeRangeCell.swift in Sources */,
 				DBF3FB3E21CA006500D01F21 /* Extensions+UIView.swift in Sources */,
+				DBF48B5022570CF500BECBDF /* Firebase+Utils.swift in Sources */,
 				DB48EBC021DDC6FD00C1B920 /* CardViewModel.swift in Sources */,
 				DBF3FB4621CB4BCF00D01F21 /* CardView.swift in Sources */,
 				DBF48B2C2251B15B00BECBDF /* SettingsController.swift in Sources */,
