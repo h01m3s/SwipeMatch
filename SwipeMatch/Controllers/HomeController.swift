@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import JGProgressHUD
 
-class HomeController: UIViewController, SettingsControllerDelegate {
+class HomeController: UIViewController, SettingsControllerDelegate, LoginControllerDelegate {
     
     let topStackView = TopNavigationStackView()
     let cardsDeckView = UIView()
@@ -39,9 +39,22 @@ class HomeController: UIViewController, SettingsControllerDelegate {
         setupLayout()
         
         fetchCurrentUser()
-//        setupFirestoreUserCards()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
-//        fetchUsersFromFirestore()
+        if Auth.auth().currentUser == nil {
+            let loginController = LoginController()
+            loginController.delegate = self
+            let navController = UINavigationController(rootViewController: loginController)
+            present(navController, animated: true)
+        }
+        
+    }
+    
+    func didFinishLoginIn() {
+        fetchCurrentUser()
     }
     
     fileprivate var user: User?

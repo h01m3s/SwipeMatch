@@ -29,6 +29,8 @@
 		DBF48B2E2251BB8600BECBDF /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF48B2D2251BB8600BECBDF /* SettingsCell.swift */; };
 		DBF48B302252F68D00BECBDF /* AgeRangeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF48B2F2252F68D00BECBDF /* AgeRangeCell.swift */; };
 		DBF48B5022570CF500BECBDF /* Firebase+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF48B4F22570CF500BECBDF /* Firebase+Utils.swift */; };
+		DBF48B53225EECF900BECBDF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF48B52225EECF900BECBDF /* LoginViewModel.swift */; };
+		DBF48B55225EEF1700BECBDF /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF48B54225EEF1700BECBDF /* LoginController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		DBF48B2D2251BB8600BECBDF /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		DBF48B2F2252F68D00BECBDF /* AgeRangeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeRangeCell.swift; sourceTree = "<group>"; };
 		DBF48B4F22570CF500BECBDF /* Firebase+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Utils.swift"; sourceTree = "<group>"; };
+		DBF48B52225EECF900BECBDF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		DBF48B54225EEF1700BECBDF /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 		DB48EBBD21DDC64700C1B920 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DBF48B51225EECE000BECBDF /* Login */,
 				DBF3FB2D21C9FF0D00D01F21 /* HomeController.swift */,
 				DB1809B922025F5300012F17 /* RegistrationController.swift */,
 				DBF48B2B2251B15B00BECBDF /* SettingsController.swift */,
@@ -166,6 +171,15 @@
 				DBF48B2F2252F68D00BECBDF /* AgeRangeCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DBF48B51225EECE000BECBDF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DBF48B54225EEF1700BECBDF /* LoginController.swift */,
+				DBF48B52225EECF900BECBDF /* LoginViewModel.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		E387131528B8C5FEF4943D21 /* Frameworks */ = {
@@ -315,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBF48B55225EEF1700BECBDF /* LoginController.swift in Sources */,
 				DB7A5E4C2203D980008A37FB /* Bindable.swift in Sources */,
 				DBF3FB2E21C9FF0D00D01F21 /* HomeController.swift in Sources */,
 				DB1809BE220277FD00012F17 /* RegistrationViewModel.swift in Sources */,
@@ -323,6 +338,7 @@
 				DB0DEF9421F03EFC00FC7A18 /* Advertiser.swift in Sources */,
 				DBF3FB2C21C9FF0D00D01F21 /* AppDelegate.swift in Sources */,
 				DBF48B302252F68D00BECBDF /* AgeRangeCell.swift in Sources */,
+				DBF48B53225EECF900BECBDF /* LoginViewModel.swift in Sources */,
 				DBF3FB3E21CA006500D01F21 /* Extensions+UIView.swift in Sources */,
 				DBF48B5022570CF500BECBDF /* Firebase+Utils.swift in Sources */,
 				DB48EBC021DDC6FD00C1B920 /* CardViewModel.swift in Sources */,
