@@ -31,6 +31,7 @@
 		DBF48B5022570CF500BECBDF /* Firebase+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF48B4F22570CF500BECBDF /* Firebase+Utils.swift */; };
 		DBF48B53225EECF900BECBDF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF48B52225EECF900BECBDF /* LoginViewModel.swift */; };
 		DBF48B55225EEF1700BECBDF /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF48B54225EEF1700BECBDF /* LoginController.swift */; };
+		DBF48B582260447400BECBDF /* UserDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF48B572260447400BECBDF /* UserDetailsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		DBF48B4F22570CF500BECBDF /* Firebase+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Utils.swift"; sourceTree = "<group>"; };
 		DBF48B52225EECF900BECBDF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		DBF48B54225EEF1700BECBDF /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		DBF48B572260447400BECBDF /* UserDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		DB48EBBD21DDC64700C1B920 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DBF48B562260445500BECBDF /* User Details */,
 				DBF48B51225EECE000BECBDF /* Login */,
 				DBF3FB2D21C9FF0D00D01F21 /* HomeController.swift */,
 				DB1809B922025F5300012F17 /* RegistrationController.swift */,
@@ -180,6 +183,14 @@
 				DBF48B52225EECF900BECBDF /* LoginViewModel.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		DBF48B562260445500BECBDF /* User Details */ = {
+			isa = PBXGroup;
+			children = (
+				DBF48B572260447400BECBDF /* UserDetailsController.swift */,
+			);
+			path = "User Details";
 			sourceTree = "<group>";
 		};
 		E387131528B8C5FEF4943D21 /* Frameworks */ = {
@@ -336,6 +347,7 @@
 				DB1809BC2202648300012F17 /* CustomTextField.swift in Sources */,
 				DBF3FB4221CB204500D01F21 /* HomeBottomControlsStackView.swift in Sources */,
 				DB0DEF9421F03EFC00FC7A18 /* Advertiser.swift in Sources */,
+				DBF48B582260447400BECBDF /* UserDetailsController.swift in Sources */,
 				DBF3FB2C21C9FF0D00D01F21 /* AppDelegate.swift in Sources */,
 				DBF48B302252F68D00BECBDF /* AgeRangeCell.swift in Sources */,
 				DBF48B53225EECF900BECBDF /* LoginViewModel.swift in Sources */,
